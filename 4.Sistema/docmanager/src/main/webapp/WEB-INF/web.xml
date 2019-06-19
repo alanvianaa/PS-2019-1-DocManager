@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+    <!-- Refere-se ao nome da aplicação -->
+    <display-name>DocManager - Sistema Gerenciador de Documentos</display-name>
+	
+	
+    <!-- Arquivo que será carregado quando executar o projeto -->
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+		
+    <!-- Estágio do Projeto - "Development" ou "Production" -->
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+        
+    <!-- Tema do PrimeFaces 
+    <context-param>
+        <param-name>primefaces.THEME</param-name>
+        <param-value>nova-light</param-value>
+    </context-param>
+    -->
+   <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>admin</param-value>
+</context-param>
+        
+    <!-- Configuração do JSF -->
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <!-- Tipo de arquivo que será filtrado pelo Faces Servlet. -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+    
+    <!-- Icones para o PrimeFaces -->
+    <context-param>
+    <param-name>primefaces.FONT_AWESOME</param-name>
+    <param-value>true</param-value>
+    </context-param>
+    
+</web-app>

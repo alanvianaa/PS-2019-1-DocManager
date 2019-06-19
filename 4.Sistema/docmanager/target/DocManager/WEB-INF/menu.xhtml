@@ -1,0 +1,34 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+
+    <div>
+        <a href="#"><h:graphicImage name="img/docmanager.png" style="width: 70%; margin-bottom:4px; margin-top: 5px; margin-left: 15%"/></a>
+    </div>     
+
+    <h:form>
+        <p:panelMenu style="width:100%; height: 100%;">
+            <p:submenu label="INICIO" styleClass="submenu" >
+                <p:menuitem value="Dashboard" icon="fa fa-dashboard"/>
+                <p:menuitem value="Personalização" icon="fa fa-edit"/>
+            </p:submenu>
+            <p:submenu label="DOCUMENTOS" styleClass="submenu">
+                <p:menuitem value="Elaborar" icon="fa fa-file-o"/>
+                <p:menuitem value="Revisar" icon="fa fa-file-text" />
+                <p:menuitem value="Aprovar" icon="fa fa-file-text-o" />
+            </p:submenu>
+            <p:submenu label="GERENCIAMENTO" styleClass="submenu">
+                <p:menuitem value="Cadastrar Usuários" icon="fa fa-users" />
+                <p:menuitem value="Gerenciar permissões" icon="fa fa-gears" />
+            </p:submenu>
+            <p:submenu label="CONSULTAS" styleClass="submenu">
+                <p:menuitem value="Simples" icon="fa fa-search" />
+                <p:menuitem value="Avançada" icon="fa fa-search-plus" />
+            </p:submenu>
+        </p:panelMenu>	
+    </h:form>
+    
+    
+</ui:composition>

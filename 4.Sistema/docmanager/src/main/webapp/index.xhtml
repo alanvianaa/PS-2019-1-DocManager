@@ -1,0 +1,41 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/template.xhtml">
+
+
+
+    <ui:define name = "corpo">  
+        <title>Index</title> 
+
+        <div class="ui-g" >
+            <div class="ui-g-4" >
+                <p:panel header="Em elaboração" style="background-color: deepskyblue"> 
+                    <i class="fa fa-file-o" style="font-size: 4em"></i>
+                    <h:outputText  value=" #{dashBoard.qtdElaboracao}" style="font-size: 4em"/>
+                </p:panel>
+            </div>
+            <div class="ui-g-4">
+                <p:panel header="Em Verificação" style="background-color: orangered">
+                    <i class="fa fa-file-text" style="font-size: 4em"></i>
+                    <h:outputText  value=" #{dashBoard.qtdVerificacao}" style="font-size: 4em"/>
+                </p:panel>
+            </div>
+            <div class="ui-g-4">
+                <p:panel header="Em Aprovação" style="background-color: limegreen">
+                    <i class="fa fa-file-text-o" style="font-size: 4em"></i>
+                    <h:outputText  value=" #{dashBoard.qtdAprovacao}" style="font-size: 4em"/>
+                </p:panel>                
+            </div>
+
+        </div>
+     
+    </ui:define>                          
+
+
+
+</ui:composition>
+

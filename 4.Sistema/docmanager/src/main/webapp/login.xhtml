@@ -8,25 +8,19 @@
 </h:head>
   
 <h:body>
-    <div style="margin-left: 40%; margin-top: 10%;">
-  <h:form >
-    <p:messages id="messages" />
-    <p:panelGrid columns="2">
-      <p:outputLabel for="nomeUsuario" value="Nome 
-      Usuário:" />
-      <p:inputText id="nomeUsuario"
-      value="#{Efetuar_login.setUsuario}" />
+<h:form>   
+    <p:growl id="login" showDetail="false" sticky="true" />  
        
-      <p:outputLabel for="senha" value="Senha:" />
-      <p:password id="senha" value="#{Efetuar_login.setSenha}" />
-       
-      <p:outputLabel/>
-      <p:commandButton value="Enviar"
-      icon="ui-icon-star" action="#{Efetuar_login.informar_usuario}" ajax="false">
-      </p:commandButton>
- 
-    </p:panelGrid>
-  </h:form>
-    </div>
+    <p:panel  header="Login" style="margin-left: 40%; width: 250px; margin-top: 10%; ">
+        <h:panelGrid columns="2" cellpadding="5">  
+            <p:outputLabel for="usuario" value="Usuário: " />   
+            <p:inputText id="usuario" value="#{login.usuario}" required="true" requiredMessage="Campo Usuário é obrigatório"/>  
+            <p:outputLabel for="senha" value="Senha: " />
+            <p:password id="senha" value="#{login.senha}" required="true" requiredMessage="Campo Senha é obrigatório"/>  
+        </h:panelGrid>  
+           
+        <p:commandButton value="logar" action="#{login.logar}" update="@form" />
+    </p:panel>     
+</h:form>
 </h:body>
 </html>

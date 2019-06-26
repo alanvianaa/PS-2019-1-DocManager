@@ -40,7 +40,11 @@ public class Login implements Serializable{
            FacesContext.getCurrentInstance().getExternalContext().redirect("login.xhtml"); 
        }
     }
-        
+    
+    public String getNomeCompleto(){
+        return user.getNomeCompleto();
+    }
+    
     public String getUsuario() {
         return usuario;
     }

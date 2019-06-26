@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3c.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui">
     <h:head>
 
         <h:outputStylesheet name="css/template.css"/>
         
     </h:head>
+    <f:event type="preRenderView" listener="#{login.verificaSession()}" /> <!-- Toda página pega esse template e faz a validação do usuario -->
     <h:body class="body">
         <div class="menu" style="border-right: 1px solid lightgrey">
             <ui:include src="menu.xhtml" />

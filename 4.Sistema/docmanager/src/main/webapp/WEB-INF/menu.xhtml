@@ -5,27 +5,27 @@
     xmlns:p="http://primefaces.org/ui">
 
     <div>
-        <a href="#"><h:graphicImage name="img/docmanager.png" style="width: 70%; margin-bottom:4px; margin-top: 5px; margin-left: 15%"/></a>
+        <a href="index.xhtml"><h:graphicImage name="img/docmanager.png" style="width: 70%; margin-bottom:4px; margin-top: 5px; margin-left: 15%"/></a>
     </div>     
 
     <h:form>
         <p:panelMenu style="width:100%; height: 100%;">
             <p:submenu label="INICIO" styleClass="submenu" >
-                <p:menuitem value="Dashboard" icon="fa fa-dashboard"/>
-                <p:menuitem value="Personalização" icon="fa fa-edit"/>
+                <p:menuitem value="Dashboard" icon="fa fa-dashboard" url="index.xhtml"/>
+                <p:menuitem value="Personalização" icon="fa fa-edit" url="elaborarDocumento.xhtml"/>
             </p:submenu>
             <p:submenu label="DOCUMENTOS" styleClass="submenu">
-                <p:menuitem value="Elaborar" icon="fa fa-file-o"/>
-                <p:menuitem value="Revisar" icon="fa fa-file-text" />
-                <p:menuitem value="Aprovar" icon="fa fa-file-text-o" />
+                <p:menuitem value="Elaborar" icon="fa fa-file-o" url="elaborarDocumento.xhtml"/>
+                <p:menuitem value="Revisar" icon="fa fa-file-text" url="elaborarDocumento.xhtml"/>
+                <p:menuitem value="Aprovar" icon="fa fa-file-text-o" url="elaborarDocumento.xhtml"/>
             </p:submenu>
             <p:submenu label="GERENCIAMENTO" styleClass="submenu">
-                <p:menuitem value="Cadastrar Usuários" icon="fa fa-users" />
-                <p:menuitem value="Gerenciar permissões" icon="fa fa-gears" />
+                <p:menuitem value="Cadastrar Usuários" icon="fa fa-users" url="elaborarDocumento.xhtml"/>
+                <p:menuitem value="Gerenciar permissões" icon="fa fa-gears" url="elaborarDocumento.xhtml"/>
             </p:submenu>
             <p:submenu label="CONSULTAS" styleClass="submenu">
-                <p:menuitem value="Simples" icon="fa fa-search" />
-                <p:menuitem value="Avançada" icon="fa fa-search-plus" />
+                <p:menuitem value="Simples" icon="fa fa-search" url="elaborarDocumento.xhtml"/>
+                <p:menuitem value="Avançada" icon="fa fa-search-plus" url="elaborarDocumento.xhtml"/>
             </p:submenu>
         </p:panelMenu>	
     </h:form>

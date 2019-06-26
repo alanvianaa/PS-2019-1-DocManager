@@ -6,18 +6,17 @@
 
     <!-- TOPO START -->
 
-
     <div>   
         <div style="float: left; padding: 4px; padding-left: 4px; height: 100%; ">
             <p:button icon="fa fa-reorder" ></p:button> 
         </div>
         
         <div style="float: left; padding: 4px; padding-left: 4px; height: 100%; ">
-            <h:outputLabel  value="Olá: #{helloController.showHello()}" />   
+            <h:outputLabel  value="Olá: #{login.usuario}" />   
         </div>
         <div style="float: right; padding: 4px; height: 100%; ">      
 
-            <p:commandButton value="Sair"/>
+            <p:commandButton value="Sair" action="#{login.sair()}"/>
         </div>
     </div>  
     <!-- TOPO END -->

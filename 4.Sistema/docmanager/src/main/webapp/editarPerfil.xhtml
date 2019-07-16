@@ -1,0 +1,56 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/template.xhtml">
+
+
+
+    <ui:define name = "corpo">  
+        <title>Index</title> 
+
+        <div class="ui-g" >
+            <div class="ui-g-4" >
+                <h:outputText  value="Editar Perfil" style="font-size: 4em"/>
+<h:form>
+    <h:panelGrid columns="2" cellpadding="5">
+        
+        <h:outputLabel  value="Nome Completo: " />
+        <p:inplace editor="true">
+            <p:inputText value="#{perfil.user.nomeCompleto}" required="true" label="text" />
+        </p:inplace>
+        
+        <h:outputLabel  value="Usuario " />
+        <p:inplace editor="true">
+            <p:inputText value="#{perfil.user.usuario}" required="true" label="text" />
+        </p:inplace>
+        
+        <h:outputLabel  value="E-mail " />
+        <p:inplace editor="true">
+            <p:inputText value="#{perfil.user.email}" required="true" label="text" />
+        </p:inplace>
+        
+        <h:outputLabel  value="CPF: " />
+        <p:inplace editor="true">
+            <p:inputText value="#{perfil.user.cpf}" required="true" label="text" />
+        </p:inplace>
+
+        <h:outputLabel value="Nova Senha: " />
+        <p:password id="feedback" value="#{editarPerfil.novaSenha}" feedback="true" />
+        
+        <p:commandButton value="Salvar" action="#{login.sair()}" update="@form" />
+                
+    </h:panelGrid>
+</h:form>
+            </div>
+
+        </div>
+     
+    </ui:define>                          
+
+
+
+</ui:composition>
+

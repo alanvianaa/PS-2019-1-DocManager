@@ -7,16 +7,19 @@
     <!-- TOPO START -->
 
     <div>   
-        <div style="float: left; padding: 4px; padding-left: 4px; height: 100%; ">
-            <p:button icon="fa fa-reorder" ></p:button> 
-        </div>
-        
+
         <div style="float: left; padding: 4px; padding-left: 4px; height: 100%; ">
             <h:outputLabel  value="Olá: #{login.nomeCompleto}" />   
         </div>
         <div style="float: right; padding: 4px; height: 100%; ">      
-
-            <p:commandButton value="Sair" action="#{login.sair()}"/>
+            <h:form> 
+                <p:commandButton id="dynaButton" value="Opções" type="button" icon="fa fa-cog" image="perfil"/>
+                <p:tieredMenu overlay="true" trigger="dynaButton" my="left top" at="left bottom" style="width:200px">      
+                    <p:menuitem value="Editar perfil" action="#{menuView.save}" icon="fa fa-gears" url="editarPerfil.xhtml" />
+                    <p:menuitem value="Ajuda" action="#{menuView.update}" icon="fa fa-life-saver" url="elaborarDocumento.xhtml" />
+                    <p:menuitem value="Sair" action="#{login.sair}" icon="fa fa-close"/>
+                </p:tieredMenu>
+            </h:form>
         </div>
     </div>  
     <!-- TOPO END -->

@@ -1,6 +1,7 @@
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/controller/HelloController.java
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/negocio/Usuario.java
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/controller/Login.java
+/home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/controller/Perfil.java
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/persistencia/usuarioDAO.java
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/controller/DashBoard.java
 /home/alan/Documentos/PS-2019-1-DocManager/4.Sistema/docmanager/src/main/java/persistencia/ConexaoDB.java

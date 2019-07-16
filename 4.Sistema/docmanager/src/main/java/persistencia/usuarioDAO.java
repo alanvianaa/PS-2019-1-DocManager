@@ -22,6 +22,8 @@ public class usuarioDAO {
             while (rs.next()) { //após achar ele preencher os variáveis da classe
                 this.id = rs.getInt("id");
                 this.nomeCompleto = rs.getString("nome_completo");
+                this.email = rs.getString("email");
+                this.cpf = rs.getString("cpf");
                 return true;
             }
         } catch (SQLException ex) {

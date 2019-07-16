@@ -16,6 +16,10 @@ public class Login implements Serializable{
     private String senha;
     private Usuario user; 
     
+    public Usuario getUser(){
+        return user;
+    }
+    
     public void logar() throws IOException {
         user = new Usuario(usuario,senha); //criar o objeto user com o usuario e senha informado
         
